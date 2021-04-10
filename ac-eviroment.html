@@ -9,6 +9,9 @@
 </head>
 
 <body>   
+
+
+        
          <div class="header">
             <div class="web">
              <a href="https://ac.cycu.edu.tw/">
@@ -35,7 +38,31 @@
          </iframe>
          </div> 
 
-<div class="topic">會計系環境</div>
+
+         <h1 class="ml2">會計系環境</h1>
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+         <script>// Wrap every letter in a span
+         var textWrapper = document.querySelector('.ml2');
+         textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+         
+         anime.timeline({loop: true})
+           .add({
+             targets: '.ml2 .letter',
+             scale: [4,1],
+             opacity: [0,1],
+             translateZ: 0,
+             easing: "easeOutExpo",
+             duration: 950,
+             delay: (el, i) => 70*i
+           }).add({
+             targets: '.ml2',
+             opacity: 0,
+             duration: 1000,
+             easing: "easeOutExpo",
+             delay: 1000
+           });</script>
+
 <div class="up">
     本系設有 4 間會計系學生專用教室、 教師研究室 18 間、碩士、碩專生研究室 3 間(仍再擴充)，<br>
     皆備多媒體教學、空調設備，教學環境完善舒適。 <br>

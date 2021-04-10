@@ -35,9 +35,31 @@
          </iframe>
          </div> 
 
-     <div class="topic">
-    中原大學商學院企管系
-    </div>
+
+         <h1 class="ml2"><a href="https://ba.cycu.edu.tw/">中原大學商學院企管系</a></h1>
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+         <script>// Wrap every letter in a span
+         var textWrapper = document.querySelector('.ml2');
+         textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+         
+         anime.timeline({loop: true})
+           .add({
+             targets: '.ml2 .letter',
+             scale: [4,1],
+             opacity: [0,1],
+             translateZ: 0,
+             easing: "easeOutExpo",
+             duration: 950,
+             delay: (el, i) => 70*i
+           }).add({
+             targets: '.ml2',
+             opacity: 0,
+             duration: 1000,
+             easing: "easeOutExpo",
+             delay: 1000
+           });</script>
+     
     
     <div class="introduction"> 
       <div class="talk"><img src="aa.png"><img src="0.png"><br>
@@ -73,7 +95,68 @@
       </p></div>
     <div class="introduction"> 
 
-    <h2>快繼續看下去讓我們更了解讀完過國貿系要做甚麼吧~~~</h2>
+      <h1 class="ml4">
+        <span class="letters letters-1">一起看看企管系要做甚麼吧~~~</span>
+        <span class="letters letters-2">Ready?</span>
+        <span class="letters letters-3">Go!</span>
+      </h1>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      <script>var ml4 = {};
+        ml4.opacityIn = [0,1];
+        ml4.scaleIn = [0.2, 1];
+        ml4.scaleOut = 3;
+        ml4.durationIn = 800;
+        ml4.durationOut = 600;
+        ml4.delay = 500;
+        
+        anime.timeline({loop: true})
+          .add({
+            targets: '.ml4 .letters-1',
+            opacity: ml4.opacityIn,
+            scale: ml4.scaleIn,
+            duration: ml4.durationIn
+          }).add({
+            targets: '.ml4 .letters-1',
+            opacity: 0,
+            scale: ml4.scaleOut,
+            duration: ml4.durationOut,
+            easing: "easeInExpo",
+            delay: ml4.delay
+          }).add({
+            targets: '.ml4 .letters-2',
+            opacity: ml4.opacityIn,
+            scale: ml4.scaleIn,
+            duration: ml4.durationIn
+          }).add({
+            targets: '.ml4 .letters-2',
+            opacity: 0,
+            scale: ml4.scaleOut,
+            duration: ml4.durationOut,
+            easing: "easeInExpo",
+            delay: ml4.delay
+          }).add({
+            targets: '.ml4 .letters-3',
+            opacity: ml4.opacityIn,
+            scale: ml4.scaleIn,
+            duration: ml4.durationIn
+          }).add({
+            targets: '.ml4 .letters-3',
+            opacity: 0,
+            scale: ml4.scaleOut,
+            duration: ml4.durationOut,
+            easing: "easeInExpo",
+            delay: ml4.delay
+          }).add({
+            targets: '.ml4',
+            opacity: 0,
+            duration: 500,
+            delay: 500
+          });
+         
+          
+        </script>
+  
     </div>
   
      
@@ -206,7 +289,7 @@
     <div class="content">
        <img src="未來.png" class="image1"> <br>
         
-        <h3>Q1:國貿系出路怎麼選？</h3>
+        <h3>Q1:企管系出路怎麼選？</h3>
        <p>企管系出路大公司以及小公司選擇，對於企管系畢業社會新鮮人找工作是個難題。<br><br>
 
         大公司顧名思義公司具備有一定規模、體制、人數，<br>
@@ -223,15 +306,8 @@
         薪水高低並沒有一定，還是會依照不同公司有不同薪水會依照不同公司有不同薪水，大公司薪水穩定，小公司薪水幅度大，風險也比較大。
          </p><br>
 
-       <h3>Q2:國貿系證照需要考哪些？</h3>
-       <p>國貿相關的證照相當多元，也會依據不同主辦單位有不同相關證照種類如：
-       考選部-專責報關人員、
-       進出口商業同業公會-貿易經營師、
-       國貿大會考、
-       勞動部-國貿業務技術士。
-
-       透上述內容可以了解到國貿系證照相當多元，有些公司或是職務都會要求相關證照內容具備，
-       因此國貿出路薪水、證照都是身為國貿人在職場上就業必須要了解必備知識。</p><br>
+       <h3>Q2:企管系證照需要考哪些？</h3>
+       <br>
 
        <h3>證照推薦</h3>
        <table border="1">
@@ -264,7 +340,7 @@
       </table><br>
      
 
-       <h3>Q3:常見的國貿系出路工作:</h3>
+       <h3>Q3:常見的企管系出路工作:</h3>
 
        企管系出路相當多元，因為企管系在學就讀專長內容，主要是要培養企業經營管理人才，<br>
        因此從生產、行銷、人資、研發、財務經營公司各面向皆有其涉略，<br>
@@ -337,9 +413,33 @@
    <button class="accordion ">環境資源</button>
    <div class="panel">
    
-     <div style="font-size: x-large">
+    <div style="font-size: small">
       <img src="環境.png" class="image1"> <br>
-    <a href="ib-eviroment.html">環境資源 Our Environment</a><br><br><br><br><br><br><br></div>
+      <h1 class="ml2"><a href="ba-eviroment.html">環境資源 Our Environment</a><br><br><br><br><</h1>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      <script>// Wrap every letter in a span
+      var textWrapper = document.querySelector('.ml2');
+      textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+      
+      anime.timeline({loop: true})
+        .add({
+          targets: '.ml2 .letter',
+          scale: [4,1],
+          opacity: [0,1],
+          translateZ: 0,
+          easing: "easeOutExpo",
+          duration: 950,
+          delay: (el, i) => 70*i
+        }).add({
+          targets: '.ml2',
+          opacity: 0,
+          duration: 1000,
+          easing: "easeOutExpo",
+          delay: 1000
+        });</script>
+
+   
 </div>
 
 

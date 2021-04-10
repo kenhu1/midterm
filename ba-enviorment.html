@@ -34,13 +34,52 @@
          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
          </iframe>
          </div> 
+        
+         <h1 class="ml2">企管系環境</h1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script>// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml2');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml2 .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+  }).add({
+    targets: '.ml2',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });</script>
 
 
-         <div class="topic">企管系環境<br></div>
-         <div class="up">
+
+<div class="content">
+                <img src="poi.jpg"  >
+                <p class="pp1">本系擁有完善的軟硬體設施，提供師生充裕的教學資源。在空間規劃方面，除了全院共用的商學資料中心之外，本系單獨設有多媒體專業教室、系學會討論室、博士班研討室、研究生專用研討室、學生專用電腦室以及專任教師研究室。
+                    在電腦設施方面，目前硬體設備擁有網路伺服器、筆記型電腦、個人電腦、印表機、以及各類型的電腦週邊設備；
+                    軟體設備除了一般的應用套裝軟體外，並擁有BOSS、SPSS、LISREL等管理及統計專業電腦軟體。</p>
+                <img src="frg.jpg">
+                <p>在圖書方面，目前擁有博碩士論文、以及各類型中西文圖書。 
+                    在教學器材方面，現有單槍投影機、攝影機、實物提示機、數位相機、影印機以及各類擴音設備等
+                     ( 此上教學資源尚未包括全校圖書館數萬冊典載。)</p>
+                     
+         </div>
+
+        <!--<div class="up">
              <p>
-         本系擁有六間專業教室供給同學們使用，另外亦能在辦公室借到電腦、遙控筆、DV等等硬體設備。<BR>
-         讓同學在就讀期間，隨著時間與日俱進，就像是我們的硬軟體資源。<BR></p></div>
+                本系擁有完善的軟硬體設施，提供師生充裕的教學資源。在空間規劃方面，除了全院共用的商學資料中心之外，本系單獨設有多媒體專業教室、系學會討論室、博士班研討室、研究生專用研討室、學生專用電腦室以及專任教師研究室。
+                在電腦設施方面，目前硬體設備擁有網路伺服器、筆記型電腦、個人電腦、印表機、以及各類型的電腦週邊設備；
+                軟體設備除了一般的應用套裝軟體外，並擁有BOSS、SPSS、LISREL等管理及統計專業電腦軟體。<BR></p>
+                
+                </div>
      <div class="content">
         <div class="room1">
             國貿系辦公室<br>
@@ -50,35 +89,11 @@
         <div class="room2">
             應用經濟模型研究中心<br>
              <img src="2.png" width="350" height="350">
-         </div>
+         </div>--> 
        
-       <div class="room3">
-       商學301研討室<br>
-       <img src="3.jpg"  width="350" height="350">
-       </div>
-
-       <div class="room4">
-       商學302專業教室<br>
-       <img src="4.png" width="350" height="350">
-       </div>
-
-       <div class="room5">
-       商學303即時財經預測室<br>
-       <img src="5.jpg"  width="350" height="350">
-       </div>
-
-       <div class="room6">
-       商學309B貿易談判室<br>
-       <img src="6.png" width="350" height="350">
-       </div>
-       
-       <div class="room7">
-       商學307專業教室<br>
-       <img src="7.png"  width="350" height="350">
-       </div>
-     
+         
     </div>
-</div>
+
 
     </body>
 

@@ -35,9 +35,32 @@
          </iframe>
          </div> 
 
-     <div class="topic">
-    <a href="https://ac.cycu.edu.tw/en/english/">中原大學商學院會計系</a>
-    </div>
+
+         <h1 class="ml2"><a href="https://ac.cycu.edu.tw/en/english/">中原大學商學院會計系</a></h1>
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+         <script>// Wrap every letter in a span
+         var textWrapper = document.querySelector('.ml2');
+         textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+         
+         anime.timeline({loop: true})
+           .add({
+             targets: '.ml2 .letter',
+             scale: [4,1],
+             opacity: [0,1],
+             translateZ: 0,
+             easing: "easeOutExpo",
+             duration: 950,
+             delay: (el, i) => 70*i
+           }).add({
+             targets: '.ml2',
+             opacity: 0,
+             duration: 1000,
+             easing: "easeOutExpo",
+             delay: 1000
+           });</script>
+
+    
     <div class="introduction"> 
           
     <p>
@@ -68,8 +91,68 @@
 
       <h2>選擇中原會計，不必煩生計٩(✿∂‿∂✿)۶</h2><br>
       </p>
-      <h2>快繼續看下去讓我們更了解讀完過國貿系要做甚麼吧~~~</h2>
-      </div>
+      <h1 class="ml4">
+        <span class="letters letters-1">一起看看會計系要做甚麼吧~~~</span>
+        <span class="letters letters-2">Ready?</span>
+        <span class="letters letters-3">Go!</span>
+      </h1>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      <script>var ml4 = {};
+        ml4.opacityIn = [0,1];
+        ml4.scaleIn = [0.2, 1];
+        ml4.scaleOut = 3;
+        ml4.durationIn = 800;
+        ml4.durationOut = 600;
+        ml4.delay = 500;
+        
+        anime.timeline({loop: true})
+          .add({
+            targets: '.ml4 .letters-1',
+            opacity: ml4.opacityIn,
+            scale: ml4.scaleIn,
+            duration: ml4.durationIn
+          }).add({
+            targets: '.ml4 .letters-1',
+            opacity: 0,
+            scale: ml4.scaleOut,
+            duration: ml4.durationOut,
+            easing: "easeInExpo",
+            delay: ml4.delay
+          }).add({
+            targets: '.ml4 .letters-2',
+            opacity: ml4.opacityIn,
+            scale: ml4.scaleIn,
+            duration: ml4.durationIn
+          }).add({
+            targets: '.ml4 .letters-2',
+            opacity: 0,
+            scale: ml4.scaleOut,
+            duration: ml4.durationOut,
+            easing: "easeInExpo",
+            delay: ml4.delay
+          }).add({
+            targets: '.ml4 .letters-3',
+            opacity: ml4.opacityIn,
+            scale: ml4.scaleIn,
+            duration: ml4.durationIn
+          }).add({
+            targets: '.ml4 .letters-3',
+            opacity: 0,
+            scale: ml4.scaleOut,
+            duration: ml4.durationOut,
+            easing: "easeInExpo",
+            delay: ml4.delay
+          }).add({
+            targets: '.ml4',
+            opacity: 0,
+            duration: 500,
+            delay: 500
+          });
+         
+          
+        </script>
+  </div>
 
     
      <div class="main">
@@ -283,10 +366,33 @@
    <button class="accordion ">環境資源</button>
    <div class="panel">
    
-     <div style="font-size: x-large">
+     <div style="font-size: small">
       <img src="環境.png" class="image1"> <br>
-    <a href="ac-eviroment.html">環境資源 Our Environment</a><br><br><br><br><br><br><br></div>
-</div>
+      <h1 class="ml2"><a href="ac-eviroment.html">環境資源 Our Environment</a><br><br><br><br><</h1>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      <script>// Wrap every letter in a span
+      var textWrapper = document.querySelector('.ml2');
+      textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+      
+      anime.timeline({loop: true})
+        .add({
+          targets: '.ml2 .letter',
+          scale: [4,1],
+          opacity: [0,1],
+          translateZ: 0,
+          easing: "easeOutExpo",
+          duration: 950,
+          delay: (el, i) => 70*i
+        }).add({
+          targets: '.ml2',
+          opacity: 0,
+          duration: 1000,
+          easing: "easeOutExpo",
+          delay: 1000
+        });</script>
+
+   
 </div>
 
 <script>

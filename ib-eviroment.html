@@ -36,28 +36,50 @@
          </div> 
 
 
-         <div class="topic">國貿系環境<br></div>
+         <h1 class="ml2">國貿系環境</h1>
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+         <script>// Wrap every letter in a span
+         var textWrapper = document.querySelector('.ml2');
+         textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+         
+         anime.timeline({loop: true})
+           .add({
+             targets: '.ml2 .letter',
+             scale: [4,1],
+             opacity: [0,1],
+             translateZ: 0,
+             easing: "easeOutExpo",
+             duration: 950,
+             delay: (el, i) => 70*i
+           }).add({
+             targets: '.ml2',
+             opacity: 0,
+             duration: 1000,
+             easing: "easeOutExpo",
+             delay: 1000
+           });</script>
          <div class="up">
              <p>
          本系擁有六間專業教室供給同學們使用，另外亦能在辦公室借到電腦、遙控筆、DV等等硬體設備。<BR>
          讓同學在就讀期間，隨著時間與日俱進，就像是我們的硬軟體資源。<BR></p></div>
      <div class="content">
-        <div class="room1">
+        <div class="room1-1">
             國貿系辦公室<br>
               <img src="1.png" width="350" height="350">
         </div>
         
-        <div class="room2">
+        <div class="room1-2">
             應用經濟模型研究中心<br>
              <img src="2.png" width="350" height="350">
          </div>
        
-       <div class="room3">
+       <div class="room1-3">
        商學301研討室<br>
        <img src="3.jpg"  width="350" height="350">
        </div>
 
-       <div class="room4">
+       <div class="room1-4">
        商學302專業教室<br>
        <img src="4.png" width="350" height="350">
        </div>
@@ -81,13 +103,20 @@
 </div>
     </body>
 
+    
+    <div class="footer">
+        <div class="web2">
+            <a href="index.html">
+                <img src="index.gif" alt="" >
+            </a>
+        </div>
     <nav class="navbtn2">
         <div class="item1">
            <h3>地址：32023桃園市中壢區中北路200號<br>
            200 Chung Pei Road, Chung Li District, Taoyuan City, Taiwan 32023, R.O.C.</h3> <br>
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.254655553562!2d121.24134161500476!3d24.95744908400828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221425297e35%3A0xffae1fe1097c9a2e!2z5Lit5Y6f5aSn5a245ZWG5a246Zmi!5e0!3m2!1szh-TW!2stw!4v1618027834714!5m2!1szh-TW!2stw" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.254655553562!2d121.24134161500476!3d24.95744908400828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221425297e35%3A0xffae1fe1097c9a2e!2z5Lit5Y6f5aSn5a245ZWG5a246Zmi!5e0!3m2!1szh-TW!2stw!4v1618027834714!5m2!1szh-TW!2stw" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe></div>
            <br></nav>
-
 
            <div class="navphoto2"><br><br><br><br><br><br>
             <a href="https://www.ib.cycu.edu.tw/index.php" target="_blank"><img src="web.png">
@@ -95,6 +124,7 @@
             <a href="tel:+886-3-2655102"><img src="phone.png" alt=""></a>
             </a>
          </div>
+
          <button onclick="topFunction()" id="myBtn">Top</button>
        </div>
     
