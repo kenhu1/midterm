@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="menu1">
+        <button class="accordion ">企管系</button>
+        <div class="panel">
+              <a href="BA1">發展方向</a><BR> 
+              <a href="BA2">特色</a><BR>
+              <a href="BA3">系主任/所長介紹</a><BR>
+              <a href="BA4">環境資源</a><BR>
+              <a href="BA5">出路</a><BR>
+        </div>
+        <button class="accordion ">國貿系</button>
+        <div class="panel">
+              <a href="IB1">發展方向</a><BR> 
+              <a href="IB2">特色</a><BR>
+              <a href="IB3">系主任/所長介紹</a><BR>
+              <a href="IB4">環境資源</a><BR>
+              <a href="IB5">出路</a><BR>
+        </div>
+        <button class="accordion ">會計系</button>
+        <div class="panel">
+              <a href="AC1">發展方向</a> <BR>
+              <a href="AC2">特色</a><BR>
+              <a href="AC3">系主任/所長介紹</a><BR><BR>
+              <a href="AC4">環境資源</a><BR>
+              <a href="AC5">出路</a><BR>
+        </div>
+        <button class="accordion ">資管系</button>
+        <div class="panel">
+              <a href="IB1">發展方向</a> <BR>
+              <a href="IB2">特色</a><BR>
+              <a href="IB3">系主任/所長介紹</a><BR>
+              <a href="IB4">環境資源</a><BR>
+              <a href="IB5">出路</a><BR>
+        </div>
+        <button class="accordion ">財金系</button>
+        <div class="panel">
+              <a href="IB1">發展方向</a> <BR>
+              <a href="IB2">特色</a><BR>
+              <a href="IB3">系主任/所長介紹</a><BR>
+              <a href="IB4">環境資源</a><BR>
+              <a href="IB5">出路</a><BR>
+        </div>   
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+</body>
+</html>
+

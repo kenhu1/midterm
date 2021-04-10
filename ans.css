@@ -1,0 +1,79 @@
+
+  .font-b {
+    font-family: 'Comfortaa', cursive;
+  }
+  .font-e {
+    font-family: 'Luckiest Guy', cursive;
+  }
+  .font-f {
+    font-family: 'Permanent Marker', cursive;
+  }
+  .mini-cont-separation {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40vh 10vw;
+    text-align: center;
+  }
+  .style-one {
+    background-color: #000;
+    color: #fff;
+  }
+  .style-two {
+    background-color: #fff;
+    color: #000;
+  }
+  .style-three {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  
+  
+  /* code start here */
+  .border-decor-1 {
+      font-size: 36px;
+      border: 20px solid transparent;
+      border-image-source: url(https://res.cloudinary.com/dzq1l03yt/image/upload/v1591679413/decor_kqedm6.svg);
+      border-image-slice: 19;
+      border-image-repeat: repeat;
+      display: inline-block;
+      padding: 6px 19px;
+  }
+  
+  .border-decor-2 {
+      font-size: 36px;
+      border: 40px solid transparent;
+      border-image-source: url(https://res.cloudinary.com/dzq1l03yt/image/upload/v1591679413/icons_iqfwfv.svg);
+      border-image-slice: 20;
+      border-image-repeat: round;
+      display: inline-block;
+      padding: 22px 18px;
+  }
+  
+  .border-decor-3 {
+      font-size: 36px;
+      border: 60px solid transparent;
+      border-image-source: url(https://res.cloudinary.com/dzq1l03yt/image/upload/v1591679413/arrows_d5ovse.svg);
+      border-image-slice: 20;
+      border-image-repeat: round;
+      display: inline-block;
+      padding: 6px 15px;
+    @media (max-width: 576px) {
+      line-height: 28px;
+      font-size: 22px;
+    }
+  }
+  
+  
+  /* Animation */
+  .miniShowHideBorder {
+      animation: miniShowHideBorder 1s linear 1s infinite alternate;
+  }
+  @keyframes miniShowHideBorder {
+      0% {
+          border-image-source: transparent;
+      }
+      100% {
+          border-image-source: inherit;
+      }
+  }
