@@ -11,20 +11,136 @@ html{	width: 100%;
 }
 
 
-body   {
-           background-color: #9EBAC5;
+
+
+body  {
+           
            hight:100%;
 	   margin:0;
 	   padding: 0;    
 	   font-family: "標楷體";
+           font-size: 22px; 
+           background-color: #FFF8DC;
+           width: 100%;
+}
+
+
+body1   {
+           
+           hight:100%;
+	   margin:0;
+	   padding: 0;    
+	   font-family: "標楷體";
+           font-size: 22px; 
+           background-color: #FFF8DC;
+           width: 100%;
 }
 
 .header {
+    vertical-align: middle;
     top:0;
     width: 100%;
     height: 150px;
+    left:35%;
     display: flex;
     justify-content:space-between;
+    position: relative;
+}
+
+.navbtn{
+display: flex;
+    justify-content:space-between;
+position: relative;
+
+}
+
+
+  /*slideshow*/
+
+
+
+.theme img{
+    width: 100%;
+}
+
+  /*slideshow*/
+  
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    vertical-align: middle;/*垂直至中*/
+    width: 1000px;
+    height: 700px;
+    margin-left: 19%;
+    margin-top: 0%;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+.slide {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    }
+
+
+/*圖片左右兩邊圖標*/
+.pre, .next {
+    cursor: pointer;/*將鼠標移到圖片上可以看光標結果-手型。*/
+    position: absolute;
+    top: 53%;
+    width: auto;
+    padding: 0%;
+    margin-left: 20%;
+    color:#DDB7AB;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;/*是否可以選擇屬性指定的元素的文本*/
+    }
+
+ /*右邊按鈕-移到右邊*/
+    .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;/*按鈕圖樣*/
+    margin-right: 16%;
+    }
+
+ /*hover:當滑鼠移至超連結時，不論是文字變色、位移、換背景*/
+    .pre:hover, .next:hover {
+    background-color:#999B84;
+    }
+
+
+
+.cirbtn{
+    margin-bottom:10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.cir {
+cursor: pointer;/*指定指標的形狀:手型*/
+height: 15px;
+width: 15px;
+margin: 1%;
+background-color: #DDB7AB;
+list-style-type: circle;
+border-radius: 50%;
+transition: background-color 0.6s ease; /*總時長0.6秒，ease速度曲線，轉變過程中由慢到快，再到慢结束。*/
+}
+
+/*'當滑鼠移到連結時超連結的樣式*/
+.active, .cir:hover {
+background-color:#999B84;
 }
 
 .footer{
@@ -130,207 +246,21 @@ text-align:center;
 
 
 
-		
-/*members pic*/
-	 	 
- .flip-box {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    border: none;
-    perspective: 1000px;
-    position: relative;
-    margin-left: 20%;
-    margin-bottom: 25%;
-    margin-top: 3%;
-  }
-
-  .flip-box-back h3{
-    padding-top: 5%;
-  }
-  .flip-box-front img{
-    width: 250px;
-    height: 300px;
-    
-  }
-
-
-  .flip-box-inner {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    border-radius: 10%;
-    
-  }
-  .flip-box-front {
-    color: black;
-  }
-  
-  .flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-box-front,.flip-box-back {
-    position: absolute;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  .flip-box-back {
-    transform: rotateY(180deg);
-    color: white;
-    border-radius: 10%;
-    width: 300px;
-    height: 300px;
-    background-color: #555;
-    transform: rotateY(180deg);
-  }
-  .flip-box-back p{
-    text-align: center;
-    margin: 5%;
-  }
-  .flip-img img{
-    width: 30px;
-
-  }
-
-/*members content*/
-
-.ppp{	width: 300px;
-	height: 500px;
-		padding-top: 30px; 
-		border-radius: 25%;		
-		}
-.han{	width: 230px;
-		height: 300px;
-		padding-top: 30px; 
-		border-radius: 20%;	
-                }
-
-.hr2{	position: absolute;
-		top:880px;	
-		}
-hr{		height: 3px;
-		width:100vw;
-		border:0;
-		}
-.aa{
-                width: 300px;
-		height: 300px;
-                position: absolute;
-		top:780px;
-		left:950px;
-		
-
-}
-.people{
-		text-align: center;	
-		width:500px;
-		height: 550px;
-		border:3px #364D8A dashed;
-		border-radius: 10px;
-		position: relative;
-		top:100px;
-		left:150px;
-		font-size: 22px;
-		color:#273861;
-		font-weight: bold;
-		line-height: 40px;
-		padding: 10px;
-		}
-
-.fb1{	width:50px;
-		height:50px;
-		position:absolute;
-		top:340px;
-		left:340px;}
-.ig1{	width:60px;
-		height:60px;
-		position:absolute;
-		top:336px;
-		left:400px;}
-.personal{
-                width:50px;
-		height:50px;
-		position:absolute;
-		top:400px;
-		left:200px;}
-		
-.people2{
-		text-align: center;	
-		width:500px;
-		height: 550px;
-		border:3px #364D8A dashed;
-		border-radius: 10px;
-		position: relative;
-		top:-500px;
-		left:850px;
-		font-size: 22px;
-		color:#273861;
-		font-weight: bold;
-		line-height: 40px;
-		margin-bottom:50px;
-		margin-top:50px; 
-		padding: 10px;
-		 }
-
-.hr3{	position: absolute;
-		top:1780px;	
-		}
-.people3{
-		text-align: center;	
-		width:500px;
-		height: 550px;
-		border:3px #364D8A dashed;
-		border-radius: 10px;
-		position: relative;
-		top:-400px;
-		left:150px;
-		font-size: 22px;
-		color:#273861;
-		font-weight: bold;
-		line-height: 40px;
-		margin-bottom:50px; 
-		margin-top:50px;
-		padding: 10px;
-		}
-
-.hr4{	position: absolute;
-		top:2670px;	
-		}
-.people4{
-		text-align: center;	
-		width:500px;
-		height: 550px;
-		border:3px #364D8A dashed;
-		border-radius: 10px;
-		position: relative;
-		top:-1000px;
-		left:850px;
-		font-size: 22px;
-		color:#273861;
-		font-weight: bold;
-		line-height: 40px;
-		padding: 10px;
-		margin-bottom:150px; 
-		margin-top:50px;
-		}
 /*各系標題*/
 
 .ml2 {
   font-weight: 900;
   font-size: 3.5em;
-text-align:center;
-color:#273861;
+  text-align:center;
+   color:#273861;
+
 }
 
 .ml2 .letter {
   display: inline-block;
   line-height: 1em;
+
+
 }
 /*ready go*/
 
@@ -339,7 +269,7 @@ color:#273861;
   font-weight: 900;
   font-size: 3.5em;
   color:red;
-text-align:center;
+   text-align:center;
 }
 .ml4 .letters {
   position: absolute;

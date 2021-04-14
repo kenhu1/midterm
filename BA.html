@@ -10,30 +10,128 @@
 
 <body>   
          <div class="header">
-            <div class="web">
-             <a href="https://ba.cycu.edu.tw/">
-                 <img src="cycu.png" width="auto" alt="" >
-             </a>
-             </div>
-             <nav class="navbtn">
-             <a href=".html"> <img src="business.png" width="100" height="100"></a>
-             <a href="BA.html"><img src="BA.png" width="100" height="100"></a>
-             <a href="IB.html"><img src="IB.png" width="100" height="100"></a>
-             <a href="AC.html"><img src="AC.png" width="100" height="100"></a>  
-             <a href=".html">  <img src="IM.png" width="100" height="100"></a> 
-             <a href=".html">  <img src="財金.png" width="100" height="100"></a>
-             <a href="team member.html"> <img src="us.png" width="100" height="100"></a>           
-             </nav>
-       </div>
+        <a href="https://ba.cycu.edu.tw/">
+          <img src="BA-logo.png"  width="500" height="100" >
+        </a>
+      </div>
+  
+  
+      <hr size="3" align="center" noshade width="50%" color="black">
+         
+      <table align="center" height="300px" width="100%" style="margin-top: -50px;position: absolute;z-index: 90;min-width:1200px;">
+        <tr>
+         <td><div id="nav"><a href="BA.html"><img src="./img/a03.png" alt="素材"></a></div></td>
+         <td><div id="nav"><a href="IB.html"><img src="./img/a05.png" alt="素材"></a></div></td>
+         <td><div id="nav"><a href="AC.html"><img src="img/a07.png" alt="素材"></a></div></td>
+         <td><div id="nav"><a href="cyim.html"><img src="./img/a02.png" alt="素材"></a></div></td>
+         <td><div id="nav"><a href="FA.html"><img src="./img/a04.png" alt="素材"></a></div></td>
+         <td><div id="nav"><a href="team member.html"><img src="./img/a06.png" alt="素材"></a></div></td>
+        
+          </tr>
+        
+        </table>
+          </div>
+    
+          <div style="margin-top: 250px; border-width: 10px;">
 
-
-       <div>
-         <iframe width="100%" height="400px" 
-         src="https://www.youtube.com/embed/TSDpf3eIpwU" 
-         title="YouTube video player" frameborder="0" 
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-         </iframe>
-         </div> 
+            <div style="margin-top: 250px; border-width: 10px;">
+              <div all >
+                <div class="allslide">
+                    <div class="slide">
+              
+                      <div class="mySlides">
+                        <img src="./img/企管_210414_0.jpg">
+                      </div>
+                      <div class="mySlides">
+                        <img src="./img/企管_210414_1.jpg">
+                      </div>
+                      <div class="mySlides">
+                        <img src="./img/企管_210414_2.jpg">
+                      </div>
+              
+                        <div class="mySlides">
+                          <img src="./img/企管_210414_3.jpg">
+                        </div>
+                         
+                        <div class="mySlides">
+                            <img src="./img/企管_210414_4.jpg">
+                        </div>
+                        
+                        <div class="mySlides">
+                            <img src="./img/企管_210414_5.jpg">
+                        </div>
+                        
+                        <div class="mySlides">
+                            <img src="./img/企管_210414_6.jpg">
+                        </div>
+                       
+                           
+                        <a class="pre" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                   
+                    </div>
+                        <br>
+                        <div class="cirbtn">
+                          <span class="cir" onclick="currentSlide(1)"></span> 
+                          <span class="cir" onclick="currentSlide(2)"></span> 
+                          <span class="cir" onclick="currentSlide(3)"></span> 
+                          <span class="cir" onclick="currentSlide(4)"></span> 
+                          <span class="cir" onclick="currentSlide(5)"></span> 
+                          <span class="cir" onclick="currentSlide(6)"></span> 
+                        </div>
+                    </div>
+              </div>
+              <!-- 
+    
+    //自動2秒一次
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");//取得所有 class 為 “mySlides” 的元素：
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  /*圖片消失*/
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block"; /*圖片出現*/
+    
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+  }-->
+  
+  <script>
+    //手動
+    var slideIndex = 1;
+       showSlides(slideIndex);
+       
+       function plusSlides(n) {
+         showSlides(slideIndex += n);
+       }
+       
+       function currentSlide(n) {
+         showSlides(slideIndex = n);
+       }
+       
+       function showSlides(n) {
+         var i;
+         var slides = document.getElementsByClassName("mySlides");
+         var squs = document.getElementsByClassName("squ");
+         if (n > slides.length) {slideIndex = 1}    
+         if (n < 1) {slideIndex = slides.length}
+         for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+         }
+         for (i = 0; i < squs.length; i++) {
+           squs[i].className = squs[i].className.replace(" active", "");
+         }
+         slides[slideIndex-1].style.display = "block";  
+         squs[slideIndex-1].className += " active";
+       }
+   
+   </script>
+   
+  
 
 
          <h1 class="ml2"><a href="https://ba.cycu.edu.tw/">中原大學商學院企管系</a></h1>
@@ -94,12 +192,13 @@
        選我們就對了！
       </p></div>
     <div class="introduction"> 
-
+<div>
       <h1 class="ml4">
         <span class="letters letters-1">一起看看企管系要做甚麼吧~~~</span>
         <span class="letters letters-2">Ready?</span>
         <span class="letters letters-3">Go!</span>
-      </h1>
+      </h1><br></div>
+    </div>
       
       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
       <script>var ml4 = {};
@@ -171,7 +270,7 @@
       <li>•結合航空城之重點發展，推動國際運籌與電子商務之研究與教學，提供政府及企業充沛之優秀從業人力。</li>
       <li>•建立具特色之經貿政策評估中心，提供產官學研各種政策評估服務，並培育優秀之經貿政策評估人才。</li>
       <li>•分析區域自由貿易協議、國際環境協議及國際能源市場變動對我國經濟及企業經營策略之影響。</li>
-      <li>•推動服務學習，培養全人關懷及社會服務能力。</li></p>
+      <li>•推動服務學習，培養全人關懷及社會服務能力。</li></p><br>
     
 
     </div>  
@@ -415,7 +514,7 @@
    
     <div style="font-size: small">
       <img src="環境.png" class="image1"> <br>
-      <h1 class="ml2"><a href="ba-eviOrment.html">環境資源 Our Environment</a><br><br><br><br><</h1>
+      <h1 class="ml2"><a href="ba-enviorment.html">環境資源 Our Environment</a><br><br><br><br><</h1>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
       <script>// Wrap every letter in a span
@@ -461,6 +560,7 @@
     </script>
  
     </body>
+
     <div class="footer">
       <div class="web2">
           <a href="index.html">
@@ -483,9 +583,27 @@
               </a>
            </div>
            <button onclick="topFunction()" id="myBtn">Top</button>
+           <script>var mybutton = document.getElementById("myBtn");
+
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script>
+        
          </div>
       
-  <div class="co">
-    copyright&copy;chieh-2021
-    </div> 
+         <div class="co">
+          copyright&copy;中原大學資管系 Chung Yuan University 
+          </div> 
 </html>

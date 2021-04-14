@@ -9,26 +9,32 @@
 </head>
 
 <body>   
+            
+  <div class="header">
+    <a href="https://ac.cycu.edu.tw/">
+      <img src="ac logo.png"  width="500" height="100" >
+    </a>
+  </div>
 
 
-        
-         <div class="header">
-            <div class="web">
-             <a href="https://ac.cycu.edu.tw/">
-                 <img src="ac logo.png" width="auto" alt="" >
-             </a>
-             </div>
-             <nav class="navbtn">
-             <a href=".html"> <img src="business.png" width="100" height="100"></a>
-             <a href="BA.html"><img src="BA.png" width="100" height="100"></a>
-             <a href="IB.html"><img src="IB.png" width="100" height="100"></a>
-             <a href="AC.html"><img src="AC.png" width="100" height="100"></a>  
-             <a href=".html">  <img src="IM.png" width="100" height="100"></a> 
-             <a href=".html">  <img src="財金.png" width="100" height="100"></a>
-             <a href="team member.html"> <img src="us.png" width="100" height="100"></a>           
-             </nav>
-       </div>
+  <hr size="3" align="center" noshade width="50%" color="black">
+     
+  <table align="center" height="300px" width="100%" style="margin-top: -50px;position: absolute;z-index: 90;min-width:1200px;">
+    <tr>
+     <td><div id="nav"><a href="BA.html"><img src="./img/a03.png" alt="素材"></a></div></td>
+     <td><div id="nav"><a href="IB.html"><img src="./img/a05.png" alt="素材"></a></div></td>
+     <td><div id="nav"><a href="AC.html"><img src="img/a07.png" alt="素材"></a></div></td>
+     <td><div id="nav"><a href="cyim.html"><img src="./img/a02.png" alt="素材"></a></div></td>
+     <td><div id="nav"><a href="FA.html"><img src="./img/a04.png" alt="素材"></a></div></td>
+     <td><div id="nav"><a href="team member.html"><img src="./img/a06.png" alt="素材"></a></div></td>
+    </tr>
+    
+    </table>
+  
+  </div>
 
+       
+           
 
        <div>
          <iframe width="100%" height="400px" 
@@ -120,12 +126,29 @@
            
         </div>
         <button onclick="topFunction()" id="myBtn">Top</button>
+        <script>var mybutton = document.getElementById("myBtn");
+
+          window.onscroll = function() {scrollFunction()};
+          
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+          
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+      </script>
+      
     
       </div>
         
-    <div class="co">
-      copyright&copy;chieh-2021<br>
-      </div> 
-    
+      <div class="co">
+        copyright&copy;中原大學資管系 Chung Yuan University 
+        </div> 
 
 </html>

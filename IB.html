@@ -9,32 +9,127 @@
 </head>
 
 <body>   
-         <div class="header">
-            <div class="web">
-             <a href="index.html">
-                 <img src="ib logo.png" width="auto" alt="" >
-             </a>
-             </div>
-             <nav class="navbtn">
-             <a href=".html"> <img src="business.png" width="100" height="100"></a>
-             <a href="BA.html"><img src="BA.png" width="100" height="100"></a>
-             <a href="IB.html"><img src="IB.png" width="100" height="100"></a>
-             <a href="AC.html"><img src="AC.png" width="100" height="100"></a>  
-             <a href=".html">  <img src="IM.png" width="100" height="100"></a> 
-             <a href=".html">  <img src="財金.png" width="100" height="100"></a>
-             <a href="team member.html"> <img src="us.png" width="100" height="100"></a>           
-             </nav>
-       </div>
+       <div class="header">
+        <a href="https://www.ib.cycu.edu.tw/aca-1-1.php">
+          <img src="ib logo.png"  width="500" height="100" >
+        </a>
+      </div>
+  
+  
+      <hr size="3" align="center" noshade width="50%" color="black">
+         
+      <table align="center" height="300px" width="100%" style="margin-top: -50px;position: absolute;z-index: 90;min-width:1200px;">
+        <tr>
+         <td><div id="nav"><a href="BA.html"><img src="./img/a03.png" alt="素材"></a></div></td>
+         <td><div id="nav"><a href="IB.html"><img src="./img/a05.png" alt="素材"></a></div></td>
+         <td><div id="nav"><a href="AC.html"><img src="img/a07.png" alt="素材"></a></div></td>
+         <td><div id="nav"><a href="cyim.html"><img src="./img/a02.png" alt="素材"></a></div></td>
+         <td><div id="nav"><a href="FA.html"><img src="./img/a04.png" alt="素材"></a></div></td>
+         <td><div id="nav"><a href="team member.html"><img src="./img/a06.png" alt="素材"></a></div></td>
+        </tr>
+        
+        </table>
+      
+      </div>
+    
+          <div style="margin-top: 250px; border-width: 10px;">
 
 
-       <div>
-         <iframe width="100%" height="400px" 
-         src="https://www.youtube.com/embed/TSDpf3eIpwU" 
-         title="YouTube video player" frameborder="0" 
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-         </iframe>
-         </div> 
-
+            <div style="margin-top: 250px; border-width: 10px;">
+              <div all >
+                <div class="allslide">
+                    <div class="slide">
+              
+                      <div class="mySlides">
+                        <img src="./img/國貿_210414_2.jpg">
+                      </div>
+                      <div class="mySlides">
+                        <img src="./img/國貿_210414_1.jpg">
+                      </div>
+                      <div class="mySlides">
+                        <img src="./img/國貿_210414_3.jpg">
+                      </div>
+              
+                        <div class="mySlides">
+                          <img src="./img/國貿_210414_0.jpg">
+                        </div>
+                         
+                        <div class="mySlides">
+                            <img src="./img/國貿_210414_4.jpg">
+                        </div>
+                      
+                        
+                        <div class="mySlides">
+                            <img src="./img/國貿_210414_5.jpg">
+                        </div>
+                        
+                           
+                        <a class="pre" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                   
+                    </div>
+                        <br>
+                        <div class="cirbtn">
+                          <span class="cir" onclick="currentSlide(1)"></span> 
+                          <span class="cir" onclick="currentSlide(2)"></span> 
+                          <span class="cir" onclick="currentSlide(3)"></span> 
+                          <span class="cir" onclick="currentSlide(4)"></span> 
+                          <span class="cir" onclick="currentSlide(5)"></span> 
+                          <span class="cir" onclick="currentSlide(6)"></span> 
+                        </div>
+                    </div>
+              </div>
+              <!-- 
+    
+    //自動2秒一次
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");//取得所有 class 為 “mySlides” 的元素：
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  /*圖片消失*/
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block"; /*圖片出現*/
+    
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+  }-->
+  
+  <script>
+    //手動
+    var slideIndex = 1;
+       showSlides(slideIndex);
+       
+       function plusSlides(n) {
+         showSlides(slideIndex += n);
+       }
+       
+       function currentSlide(n) {
+         showSlides(slideIndex = n);
+       }
+       
+       function showSlides(n) {
+         var i;
+         var slides = document.getElementsByClassName("mySlides");
+         var squs = document.getElementsByClassName("squ");
+         if (n > slides.length) {slideIndex = 1}    
+         if (n < 1) {slideIndex = slides.length}
+         for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+         }
+         for (i = 0; i < squs.length; i++) {
+           squs[i].className = squs[i].className.replace(" active", "");
+         }
+         slides[slideIndex-1].style.display = "block";  
+         squs[slideIndex-1].className += " active";
+       }
+   
+   </script>
+   
+  
 
          <h1 class="ml2"><a href="https://www.ib.cycu.edu.tw/about-1.php">中原大學商學院國貿系</a></h1>
 
@@ -59,6 +154,7 @@
              easing: "easeOutExpo",
              delay: 1000
            });</script>
+
      
     <div class="introduction"> 
           
@@ -76,13 +172,13 @@
     還會有其他專業科目如：<br>
     國際貿易實務、國際貿易法規、國際貿易理論、國際企業管理等(<a href="https://www.ib.cycu.edu.tw/aca-1-3.php">詳請參照此</a>)<br>
     因此可以了解到身為國貿人除了商管學院基礎課程外多了許多國際化商務課程。</p><br>
-
+<div>
     <h1 class="ml4">
       <span class="letters letters-1">一起看看國貿系要做甚麼吧~~~</span>
       <span class="letters letters-2">Ready?</span>
       <span class="letters letters-3">Go!</span>
     </h1>
-    
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script>var ml4 = {};
       ml4.opacityIn = [0,1];
@@ -441,15 +537,33 @@
   
   
              <div class="navphoto2"><br><br><br><br><br><br>
-              <a href="https://www.ib.cycu.edu.tw/index.php" target="_blank"><img src="web.png">
+              
               <a href="https://www.facebook.com/ib.cycu?ref=hl" target="_blank"><img src="fb.jpg" alt="">
               <a href="tel:+886-3-2655102"><img src="phone.png" alt=""></a>
               </a>
            </div>
            <button onclick="topFunction()" id="myBtn">Top</button>
+           <script>var mybutton = document.getElementById("myBtn");
+
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script>
+        
          </div>
       
   <div class="co">
-    copyright&copy;chieh-2021
+    copyright&copy;中原大學資管系 Chung Yuan University 
     </div> 
 </html>
